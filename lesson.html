@@ -94,5 +94,96 @@
     <li>Item 4</li>
 </ol>
 
+<!--Table tag is used to create a table.-->
+<!--tr is used to create a row. td is used to create a cell. th is used to create a header cell.-->
+<table>
+
+    <caption>Table Caption</caption> <!--Caption is used to give a title to the table.-->
+    <thead> <!--Thead is used to create a header of the table.-->
+<tr>
+    <th>Heading 1</th>
+    <th>Heading 2</th>
+    <th>Heading 3</th>
+</tr>
+    </thead>
+    <tbody> <!--Tbody is used to create a body of the table.-->
+<tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+    <td>Cell 3</td>
+</tr>
+    </tbody>
+</table>
+
+<!--colspan is used to merge the cells of the table. It is used to create a cell that spans multiple columns.its
+mostly used when we need to merge cells, specially for heading-->
+<hr>
+<table>
+    <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+    </tr>
+    <tr>
+        <td colspan="3">Cell 4</td>
+        <td>Cell 4</td>
+    </tr>
+</table>
+
+<!--deprecated tags: These tags are not used anymore. They are not supported by the browsers anymore.-->
+
+<!--Form tag is used to create a form. It is used to take input from the user.-->
+
+<div>
+    <h1>Example form</h1>
+    <form action="#" method="post"> <!-- form action is used to specify the file where the form data will
+    be sent. method is used to specify the method of sending the data.-->
+<label for="name">Name</label> <!--label is used to create a label for the input field.-->
+        <input type="text" placeholder="Enter your name" id="name"> <!--input tag is used to take input from the user.text is
+        for text input and placeholder is for name in text field-->
+        <label for="sectionIDa"> <!--label is used to create a label for the input field.-->
+        <input type="radio" value="Section a" name="section" id="sectionIDa"> Section A <!--radio button is used to create a radio button.-->
+        </label>
+        <label for="sectionIDb">
+        <input type="radio" value="Section b" name="section" id="sectionIDb"> Section B
+        </label>
+            <label for="sectionIDc">
+        <input type="radio" value="Section c" name="section" id="sectionIDc"> Section C
+            </label>
+        <br>
+        <p>what food do you want?</p>
+        <label for="pizza">
+        <input type="checkbox" value="pizza" name="food" class="red" id="pizza"> Pizza<!--checkbox is used to create a checkbox.-->
+        </label>
+        <label for="burger">
+            <input type="checkbox" value="burger" name="food" class="red" id="burger"> Burger<!--checkbox is used to create a checkbox.-->
+        </label>
+        <br>
+<label for="desc1">
+    <textarea name="Description" id="desc1" cols="30" rows="10" placeholder="Enter your description"></textarea> <!--textarea is used to create a text area.-->
+</label>
+
+        <!-- more about input types - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+        <label for="country">
+<select name="country" id="country">
+    <option value="Pakistan">Pakistan</option> <!--select is used to create a dropdown list.-->
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+    <option value="UK">UK</option>
+</select>
+        </label>
+        <br>
+        <input type="submit" value="Submit"> <!--input type submit is used to create a submit button.-->
+
+
+    </form>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BsDoLVMnmZs?si=tM1bq1adQuSdv5xN"
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- iframe is used to embed a video from youtube or any other website.-->
+    <video src="vid1.mp4" controls></video> <!--video tag is used to embed a video from the local storage. and controls
+     attribute for controls for more info - https://developer.mozilla.org/en-US/docs/web/html/element/video-->
+</div>
 </body>
 </html>
